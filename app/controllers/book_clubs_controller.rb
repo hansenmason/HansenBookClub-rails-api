@@ -1,4 +1,4 @@
-class BookClubsController < ApplicationController
+class BookClubsController < OpenReadController
   before_action :set_book_club, only: [:show, :update, :destroy]
 
   # GET /book_clubs
@@ -15,7 +15,7 @@ class BookClubsController < ApplicationController
 
   # POST /book_clubs
   def create
-    @book_club = BookClub.new(book_club_params)
+    @book_club = current_user.book_clubs.build(book_club_params)
 
     if @book_club.save
       render json: @book_club, status: :created, location: @book_club
@@ -41,7 +41,7 @@ class BookClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_book_club
-      @book_club = BookClub.find(params[:id])
+      @book_club = current_user.book_clubs.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
