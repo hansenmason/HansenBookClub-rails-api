@@ -7,7 +7,8 @@ curl "http://localhost:4741/book_clubs" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "book_club": {
-      "name": "'"${NAME}"'"
+      "name": "'"${NAME}"'",
+      "booklist": "'"${BOOKLIST}"'"
     }
   }'
 
