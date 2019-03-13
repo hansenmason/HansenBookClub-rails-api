@@ -1,5 +1,5 @@
 class BookClubsController < OpenReadController
-  before_action :set_book_club, only: [:show, :update, :destroy]
+  before_action :set_book_club, only: [:update, :destroy]
 
   # GET /book_clubs
   def index
@@ -10,6 +10,8 @@ class BookClubsController < OpenReadController
 
   # GET /book_clubs/1
   def show
+    @book_club = BookClub.find(params[:id])
+
     render json: @book_club
   end
 
