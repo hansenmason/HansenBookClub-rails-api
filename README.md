@@ -1,9 +1,11 @@
+Link to Front-end Repo: https://github.com/hansenmason/HansenBookClub-client
+
+Link to Back-end site: https://hansenbookclub.herokuapp.com/
+
+Link to Front-end site: https://hansenmason.github.io/HansenBookClub-client/
+
 I used the following technologies:
 html, css, javascript, jquery, ajax, rails, ruby
-
-Link to Front-end Repo: https://github.com/hansenmason/HansenBookClub-client
-Link to Back-end site: https://hansenbookclub.herokuapp.com/
-Link to Front-end site: https://hansenmason.github.io/HansenBookClub-client/
 
 What my app does and how it works:
 
